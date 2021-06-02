@@ -8,15 +8,15 @@
     <form action="<?php echo site_url('R_c/insert');?>" method="post">
         <div class="form-group">
             <label>name</label>
-            <input type="text" name="name" class="form-control">
+            <input type="text" name="name" class="form-control" required>
         </div>
         <div class="form-group">
           <label>email</label>
-          <input type="email" name="email" class="form-control">
+          <input type="email" name="email" class="form-control" required>
         </div>
         <div class="form-group">
           <label>Password</label>
-          <input type="password" name="password" class="form-control">
+          <input type="password" name="password" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-primary">submit</button>
     </form>
