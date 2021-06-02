@@ -13,12 +13,12 @@ class R_c extends BaseController
 
     public function insert(){
 
-       /*$data =['name'=>$this->request->getVar('name'),
+       $data =['name'=>$this->request->getVar('name'),
                 'email'=>$this->request->getVar('email'),
                 'password'=>$this->request->getVar('password')];
         
         $model= new Database_test();
-        $model->insert($data); */
-        echo "done";
+        $model->insert($data);
+        //echo "done";
     }
 }
