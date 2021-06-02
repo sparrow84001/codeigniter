@@ -5,5 +5,5 @@ use CodeIgniter\Model;
 class Database_test extends Model{
 
     protected $table='student';
-    protected $allowedFields=['name','gender','email'];
+    protected $allowedFields=['name','email','password'];
 }
