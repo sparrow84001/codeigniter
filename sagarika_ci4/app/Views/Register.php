@@ -12,7 +12,7 @@
         </div>
         <div class="form-group">
           <label>email</label>
-          <input type="email" name="email" class="form-control" id="email">
+          <input type="email" name="email" class="form-control">
         </div>
         <div class="form-group">
           <label>Password</label>

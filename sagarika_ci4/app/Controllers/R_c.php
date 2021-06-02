@@ -19,6 +19,5 @@ class R_c extends BaseController
         
         $model= new Database_test();
         $model->insert($data);
-        //echo "done";
     }
 }
