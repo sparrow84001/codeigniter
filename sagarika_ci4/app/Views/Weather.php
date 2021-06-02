@@ -6,23 +6,27 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container">
-  <form action="<?php echo site_url('Climate/insert');?>" method="post">
-    <div class="form-group">
-      <label>Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
-    </div>
-    <div class="form-group">
-      <label>Gender:</label>
-      <input type="radio" id="gender" name="gender" value="M">Male
-      <input type="radio" id="gender" name="gender" value="F">female
-     </div>
-    <div>
-    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+  <div class="container">
+    <form action="<?php echo site_url('Climate/insert');?>" method="post">
+      <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" placeholder="enter name"></td>
+          <td><input type="radio"name="gender" value="m">male <input type="radio"name="gender" value="f">female</td>
+          <td><input type="email" placeholder="enter email"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="submit">Submit</button>
   </form>
-</div>
+  </div>
 
 </body>
 </html>
