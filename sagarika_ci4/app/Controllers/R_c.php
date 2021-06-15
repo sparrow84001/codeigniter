@@ -19,5 +19,7 @@ class R_c extends BaseController
         
         $model= new Database_test();
         $model->insert($data);
+        return view('Register.php');
+        //echo "successfully registered";
     }
 }
