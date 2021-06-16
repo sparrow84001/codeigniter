@@ -21,7 +21,7 @@ class Student_ins_c extends BaseController
                 ];          
         $model= new Student_db();
         $model->insert($data);
-        return view('Student_ins.php');
         echo '<script>alert("data insert")</script>';
+        return view('Student_ins.php');
     }
 }
