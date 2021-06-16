@@ -37,7 +37,6 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-      <a href= "<?php echo site_url('Student_ins_c/Update_c');?>">Update your Details</a>
   </div>
 
 </body>
