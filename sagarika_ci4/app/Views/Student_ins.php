@@ -5,18 +5,18 @@
 <body>
   <div class="container">
     <h1>STUDENT Details</h1>
-    <form action="<?php echo site_url('R_c/insert');?>" method="post">
+    <form action="<?php echo site_url('Student_ins_c/insert');?>" method="post">
         <div class="form-group">
             <label>Name</label>
             <input type="text" name="name" class="form-control" required>
         </div>
         <div class="form-group">
           <label>Roll No.</label>
-          <input type="text" name="roll number" class="form-control" required>
+          <input type="text" name="roll_number" class="form-control" required>
         </div>
         <div class="form-group">
           <label>DOB</label>
-          <input type="date" name="date of birth" class="form-control" required>
+          <input type="date" name="dob" class="form-control" required>
         </div>
         <div class="form-group">
           <p>Gender</p>
@@ -35,7 +35,7 @@
     		    <option value="Commerce">Commerce</option>
   		      </select>
         </div>
-        <input type="button" onclick="alert('Data Inserted')" value="SUBMIT">
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 
