@@ -27,11 +27,12 @@ class Student_ins_c extends BaseController
     public function Update_c(){
         return view('Student_update.php');
     }
-    public function Edit_c($id){
-        $model2= new Student_db();
-        $data['row']=$model2->where->('id',$id)->first();
-        return view('edit',data);
+    public function search($search_rollno){    
 
+        $model= new Student_db();
+        $sdata= $model->where('search_rollno',$search_rollno)->first();
+        echo "$sdata";
+        //return view('Student_update.php',$data);
     }
     public function update(){
 

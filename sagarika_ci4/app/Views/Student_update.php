@@ -5,7 +5,14 @@
 <body>
   <div class="container">
     <h1>STUDENT Details</h1>
-    <form action="<?php echo site_url('Student_ins_c/insert');?>" method="post">
+    <form action="<?php echo site_url('Student_ins_c/search'); ?>" method="post">
+    <div class="form-group">
+            <label>Enter your rool no</label>
+            <input type="text" name="search_rollno" class="form-control" required>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <form action="<?php echo site_url('Student_ins_c/update');?>" method="post">
         <div class="form-group">
             <label>Name</label>
             <input type="text" name="name" class="form-control" required>
@@ -34,7 +41,7 @@
     		    <option value="Arts">Arts</option>
     		    <option value="Commerce">Commerce</option>
   		      </select>
-        </div>
+        </div><br>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
